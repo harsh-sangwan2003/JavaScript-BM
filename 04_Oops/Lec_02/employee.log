@@ -1,0 +1,84 @@
+function Employee(id,name,basicSalary,city,phone){
+
+    this.id = id;
+    this.name = name;
+    this.basicSalary = basicSalary;
+    this.city = city;
+    this.phone = phone;
+}
+undefined
+Employee.prototype.hra = function () {
+
+    return 0.50*this.basicSalary;
+}
+ƒ () {
+
+    return 0.50*this.basicSalary;
+}
+Employee.prototype.ta = function () {
+
+    return 0.20*this.basicSalary;
+}
+
+ƒ () {
+
+    return 0.20*this.basicSalary;
+}
+Employee.prototype.da = function () {
+
+    return 0.15*this.basicSalary;
+}
+
+ƒ () {
+
+    return 0.15*this.basicSalary;
+}
+Employee.prototype.ma = function () {
+
+    return 0.10*this.basicSalary;
+}
+
+ƒ () {
+
+    return 0.10*this.basicSalary;
+}
+Employee.prototype.pf = function () {
+
+    return 0.05*this.basicSalary;
+}
+
+ƒ () {
+
+    return 0.05*this.basicSalary;
+}
+Employee.prototype.gs = function () {
+
+    return this.basicSalary+this.hra()+this.ta()+this.da()+this.ma();
+}
+
+ƒ () {
+
+    return this.basicSalary+this.hra()+this.ta()+this.da()+this.ma();
+}
+Employee.prototype.tax = function () {
+
+    return this.gs()*0.10;
+}
+
+ƒ () {
+
+    return this.gs()*0.10;
+}
+Employee.prototype.ns = function () {
+
+    return this.gs()-this.pf()-this.tax();
+}
+
+ƒ () {
+
+    return this.gs()-this.pf()-this.tax();
+}
+var mike = new Employee(1001,90000,'New Delhi',9876543210);
+undefined
+mike;
+Employee {id: 1001, name: 90000, basicSalary: 'New Delhi', city: 9876543210, phone: undefined}

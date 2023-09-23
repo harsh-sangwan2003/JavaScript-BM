@@ -1,0 +1,22 @@
+var arr = [10,20,30];
+undefined
+arr;
+(3) [10, 20, 30]
+typeof arr;
+'object'
+arr instanceof Array;
+true
+Array.prototype.insert = function (idx,ele) {
+
+    this.splice(idx,0,ele);
+    return this.length;
+}
+ƒ (idx,ele) {
+
+    this.splice(idx,0,ele);
+    return this.length;
+}
+arr.insert(1,1000);
+4
+arr;
+(4) [10, 1000, 20, 30]

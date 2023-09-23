@@ -1,0 +1,76 @@
+class Emp{
+
+    constructor(id,name,salary){
+
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    print(){}
+}
+undefined
+class Emp{
+
+    constructor(id,name,salary){
+
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    print(){
+
+        console.log(`ID is ${this.id}. Name is ${this.name}. Salary is ${this.salary}`);
+    }
+}
+undefined
+Emp;
+class Emp{
+
+    constructor(id,name,salary){
+
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    print(){
+
+        console.log(`ID is ${this.id}. Name is ${this.name}.…
+var ram = new Emp(1001,"Ram",888890);
+undefined
+ram;
+Emp {id: 1001, name: 'Ram', salary: 888890}
+ram instanceof Emp;
+true
+Emp.prototype.show = function(){
+
+    return "I am show function";
+}
+ƒ (){
+
+    return "I am show function";
+}
+Emp;
+class Emp{
+
+    constructor(id,name,salary){
+
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    print(){
+
+        console.log(`ID is ${this.id}. Name is ${this.name}.…
+class T{
+
+    static show(){
+        
+    }
+}
+undefined
+T.show();
+undefined

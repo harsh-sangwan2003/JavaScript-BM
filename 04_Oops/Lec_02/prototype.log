@@ -1,0 +1,48 @@
+function Customer(id,name,balance){
+
+    this.id = id;
+    this.name = name;
+    this.balance = balance;
+    this.print = function(){
+
+        console.log(`Id is ${this.id}.\nName is ${this.name}\nBalance is ${this.balance}`);
+    }
+}
+undefined
+var tim = new Customer(1001,"Tim",9999);
+undefined
+tim;
+Customer {id: 1001, name: 'Tim', balance: 9999, print: ƒ}balance: 9999id: 1001name: "Tim"print: ƒ ()[[Prototype]]: Object
+var mike = new Customer(1002,"Mike",8888);
+undefined
+mike;
+Customer {id: 1002, name: 'Mike', balance: 8888, print: ƒ}
+mike.__proto__ = Customer.prototype;
+{constructor: ƒ}
+mike.__proto__ === Customer.prototype;
+true
+function Customer(id,name,balance){
+
+    this.id = id;
+    this.name = name;
+    this.balance = balance;
+}
+undefined
+Customer.prototype.print = function(){
+
+        console.log(`Id is ${this.id}.\nName is ${this.name}\nBalance is ${this.balance}`);
+}
+ƒ (){
+
+        console.log(`Id is ${this.id}.\nName is ${this.name}\nBalance is ${this.balance}`);
+}
+var tim = new Customer(1001,"Tim",9999);
+undefined
+tim;
+Customer {id: 1001, name: 'Tim', balance: 9999}balance: 9999id: 1001name: "Tim"[[Prototype]]: Object
+var mike = new Customer(1002,"Mike",8888);
+undefined
+mike;
+Customer {id: 1002, name: 'Mike', balance: 8888}balance: 8888id: 1002name: "Mike"[[Prototype]]: Object
+mike.__proto__.__proto__.__proto__
+null

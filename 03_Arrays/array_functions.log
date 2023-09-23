@@ -1,0 +1,60 @@
+var arr = [10,20,30,40,50];
+undefined
+arr;
+(5) [10, 20, 30, 40, 50]0: 101: 202: 303: 404: 50length: 5[[Prototype]]: Array(0)
+typeof arr;
+'object'
+var arr2 = new Array(10);
+undefined
+arr2;
+(10) [empty × 10]
+var c = Array.of(arr);
+undefined
+c;
+[Array(5)]0: (5) [10, 20, 30, 40, 50]0: 101: 202: 303: 404: 50length: 5[[Prototype]]: Array(0)length: 1[[Prototype]]: Array(0)
+var d = Array.from(arr);
+undefined
+d;
+(5) [10, 20, 30, 40, 50]0: 101: 202: 303: 404: 50length: 5[[Prototype]]: Array(0)
+Array.isArray(c);
+true
+Array.from('12345');
+(5) ['1', '2', '3', '4', '5']
+arr = [10,20,30,10,20,10,40,90,10];
+(9) [10, 20, 30, 10, 20, 10, 40, 90, 10]
+arr.filter(ele=>ele===10);
+(4) [10, 10, 10, 10]
+arr.map(ele=>ele*0.10);
+(9) [1, 2, 3, 1, 2, 1, 4, 9, 1]
+var prices = [9000,3333.22,5555.32];
+undefined
+prices;
+(3) [9000, 3333.22, 5555.32]
+var formattedPrices = prices.map(price=>price.toLocaleString('hi-IN'));
+undefined
+formattedPrices;
+(3) ['9,000', '3,333.22', '5,555.32']
+var cloneArray = arr.map(ele=>ele);
+undefined
+cloneArray;
+(9) [10, 20, 30, 10, 20, 10, 40, 90, 10]
+prices.push(1999,2000,2111,2011);
+7
+prices;
+(7) [9000, 3333.22, 5555.32, 1999, 2000, 2111, 2011]
+prices.sort();
+(7) [1999, 2000, 2011, 2111, 3333.22, 5555.32, 9000]
+pcies.push(20,21,22);
+VM1281:1 Uncaught ReferenceError: pcies is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1281:1
+prices.push(20,21,22);
+10
+prc
+VM1305:1 Uncaught ReferenceError: prc is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1305:1
+prices;
+(10) [1999, 2000, 2011, 2111, 3333.22, 5555.32, 9000, 20, 21, 22]
+prices.sort((first,second)=>first-second);
+(10) [20, 21, 22, 1999, 2000, 2011, 2111, 3333.22, 5555.32, 9000]

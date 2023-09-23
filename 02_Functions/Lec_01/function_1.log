@@ -1,0 +1,30 @@
+function add() {
+
+    console.log("I am add function.");
+}
+undefined
+typeof add;
+'function'
+var x = 10;
+undefined
+typeof x;
+'number'
+function jQuery() {
+
+    console
+}
+undefined
+function jQuery() {
+
+    console.log(arguments);
+}
+undefined
+var $ = jQuery;
+undefined
+$("button");
+VM239:3 Arguments ['button', callee: ƒ, Symbol(Symbol.iterator): ƒ]
+undefined
+4();
+VM323:1 Uncaught TypeError: 4 is not a function
+    at <anonymous>:1:2
+(anonymous) @ VM323:1

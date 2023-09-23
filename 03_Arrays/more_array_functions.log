@@ -1,0 +1,45 @@
+var arr = [1,2,3,4,5];
+undefined
+arr.reduc((acc,ele)=>acc+ele,acc=0);
+VM396:1 Uncaught TypeError: arr.reduc is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM396:1
+arr.reduce((acc,ele)=>acc+ele,acc=0);
+15
+arr.reduce((max,ele)=>{
+
+    if(ele>max){
+
+        max = ele;
+    }
+    return max;
+},max=Number.MIN_SAFE_INTEGER);
+5
+arr.every(ele>1);
+VM625:1 Uncaught ReferenceError: ele is not defined
+    at <anonymous>:1:11
+(anonymous) @ VM625:1
+arr.every(ele=>ele>1);
+false
+arr.some(ele=>ele>1);
+true
+arr.push(10,20,30);
+8
+arr.unshit(40,50,60);
+VM831:1 Uncaught TypeError: arr.unshit is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM831:1
+arr.unshift(40,50,60);
+11
+arr;
+(11) [40, 50, 60, 1, 2, 3, 4, 5, 10, 20, 30]
+arr.splice(1,2);
+(2) [50, 60]
+arr;
+(9) [40, 1, 2, 3, 4, 5, 10, 20, 30]
+// insertion can be done through splice
+undefined
+arr = arr.filter(ele=>!(ele>50));
+(9) [40, 1, 2, 3, 4, 5, 10, 20, 30]
+arr;
+(9) [40, 1, 2, 3, 4, 5, 10, 20, 30]

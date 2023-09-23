@@ -1,0 +1,34 @@
+var obj = {};
+undefined
+typeof obj;
+'object'
+obj instanceof Object;
+true
+typeof Object;
+'function'
+obj.id = 1001;
+1001
+obj.name = "Amit";
+'Amit'
+var fn3 = new Function("a","b","return a+b");
+undefined
+fn3(1,2);
+3
+fn3;
+ƒ anonymous(a,b
+) {
+return a+b
+}
+function output(){
+
+    function print(){
+
+        console.log("I am print.");
+    }
+
+    return print;
+}
+undefined
+output()();
+VM471:5 I am print.
+undefined

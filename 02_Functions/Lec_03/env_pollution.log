@@ -1,0 +1,19 @@
+const obj2 = {
+
+    add:function(x,y){
+
+        console.log(x,y,this);
+    },
+
+    sub:(x,y)=>{
+
+        console.log(x,y,this);
+    }
+}
+undefined
+obj2.add();
+VM259:5 undefined undefined {add: ƒ, sub: ƒ}
+undefined
+obj2.sub();
+VM259:10 undefined undefined Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+undefined

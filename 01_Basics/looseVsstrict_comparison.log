@@ -1,0 +1,28 @@
+var x = 10;
+undefined
+y = x;
+10
+x == y;
+true
+++y;
+11
+x;
+10
+var a = [10,20,30];
+undefined
+typeof a;
+'object'
+typeof null;
+'object'
+typeof und
+'undefined'
+typeof undefined
+'undefined'
+typeof NaN;
+'number'
+100 + null;
+100
+null == undefined;
+true
+null === undefined;
+false

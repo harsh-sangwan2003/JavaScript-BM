@@ -1,0 +1,52 @@
+var arr = [10,20,30];
+undefined
+var arr2 = arr;
+undefined
+arr === arr2;
+true
+typeof arr;
+'object'
+arr2[0] = 1000;
+1000
+arr;
+(3) [1000, 20, 30]
+var arr3 = [...arr];
+undefined
+arr3[0]=2000;
+2000
+arr3;
+(3) [2000, 20, 30]
+arr;
+(3) [1000, 20, 30]
+var obj = {name:"Harsh",id:1};
+undefined
+typeof obj;
+'object'
+typeof arr;
+'object'
+typeof Array;
+'function'
+typeof Object;
+'function'
+arr instanceof Object;
+true
+arr instanceof Array;
+true
+function add(x,y) {
+
+    x = x||0;
+    y = y||0;
+
+    return x+y;
+}
+undefined
+add(1);
+1
+add(10,"20");
+'1020'
+add(2,null);
+2
+add(2,NaN);
+2
+add(2,undefined);
+2

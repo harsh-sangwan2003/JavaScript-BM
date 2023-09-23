@@ -1,0 +1,32 @@
+function whoAmI(city,phone){
+
+    console.log(`Name is ${this.name}. City is: ${city}. Phone is ${phone}`);
+}
+undefined
+var obj  = {name:'Ram'};
+undefined
+obj;
+{name: 'Ram'}
+var name = "Amit";
+undefined
+whoAmI('Delhi',8888);
+VM179:3 Name is Amit. City is: Delhi. Phone is 8888
+undefined
+var fn = whoAmI.bind(obj);
+undefined
+fn('Mumbai',9999);
+VM179:3 Name is Ram. City is: Mumbai. Phone is 9999
+undefined
+whoAmI.call(obj,'Agra',7777);
+VM179:3 Name is Ram. City is: Agra. Phone is 7777
+undefined
+whoAm
+VM610:1 Uncaught ReferenceError: whoAm is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM610:1
+whoAmI(obj,['Mumbai',6666]);
+VM179:3 Name is Amit. City is: [object Object]. Phone is Mumbai,6666
+undefined
+whoAmI.apply(obj,['Mumbai',6666]);
+VM179:3 Name is Ram. City is: Mumbai. Phone is 6666
+undefined

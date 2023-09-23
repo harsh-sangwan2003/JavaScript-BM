@@ -1,0 +1,87 @@
+var a;
+undefined
+a;
+undefined
+typeof a;
+'undefined'
+a = 100;
+100
+typeof a;
+'number'
+a = 10/0;
+Infinity
+typeof a;
+'number'
+a = 10 - "Amit";
+NaN
+a;
+NaN
+typeof a;
+'number'
+isNaN(a)?0:a;
+0
+x = "100";
+'100'
+var y = 20;
+undefined
+parseInt(x)+y;
+120
+x = "100.20";
+'100.20'
+parseFloat(x)+y;
+120.2
+x = "100";
+'100'
+parseFloat(x);
+100
+window
+Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+this
+Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+var name = "Amit";
+undefined
+typeof name;
+'string'
+var msg = `akjdhjk
+akjshdjkshad
+ajshdjkh
+kajhdj`;
+undefined
+msg;
+'akjdhjk\nakjshdjkshad\najshdjkh\nkajhdj'
+console.log(msg);
+VM894:1 akjdhjk
+akjshdjkshad
+ajshdjkh
+kajhdj
+undefined
+var att = true;
+undefined
+att;
+true
+typeof att;
+'boolean'
+true + 100;
+101
+var d = Integer.MAX_SAFE_INTEGER;
+VM1075:1 Uncaught ReferenceError: Integer is not defined
+    at <anonymous>:1:9
+(anonymous) @ VM1075:1
+var d = Number.MAX_SAFE_INTEGER;
+undefined
+d;
+9007199254740991
+d++;
+9007199254740991
+++d;
+9007199254740992
+++d;
+9007199254740992
+typeof d;
+'number'
+d = 9007199254740992n;
+9007199254740992n
+typeof d;
+'bigint'
+d = BigInt("384798273149807240987");
+384798273149807240987n

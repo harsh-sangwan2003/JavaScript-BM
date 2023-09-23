@@ -1,0 +1,19 @@
+function Emp(id,name,salary){
+
+    this.id = id;
+    this.name = name;
+    this.salary = salary;
+}
+undefined
+var ram = new Emp(1001,"Ram",888890);
+undefined
+ram;
+Emp {id: 1001, name: 'Ram', salary: 888890}
+var obj = Object.create(ram);
+undefined
+obj;
+Emp {}[[Prototype]]: Empid: 1001name: "Ram"salary: 888890[[Prototype]]: Objectconstructor: ƒ Emp(id,name,salary)[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: Empid: 1001name: "Ram"salary: 888890[[Prototype]]: Objectconstructor: ƒ Emp(id,name,salary)[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: Objectconstructor: ƒ Emp(id,name,salary)[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: nullget __proto__: ƒ __proto__()set __proto__: ƒ __proto__()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+var obj2 = Object.assign({},ram);
+undefined
+obj2;
+{id: 1001, name: 'Ram', salary: 888890}

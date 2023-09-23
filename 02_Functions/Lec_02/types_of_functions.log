@@ -1,0 +1,37 @@
+function output() {
+
+    console.log("I am function defintion.");
+}
+undefined
+output();
+VM80:3 I am function defintion.
+undefined
+var y = function(){
+
+    cons
+}
+undefined
+var y = function(){
+
+    console.log("I am function expression.");
+}
+undefined
+y();
+VM192:3 I am function expression.
+undefined
+z();
+var z = function(){
+
+    cons
+}
+VM260:1 Uncaught TypeError: z is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM260:1
+z();
+var z = function(){
+
+    console.log("I am anonymous function.");
+}
+VM309:1 Uncaught TypeError: z is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM309:1

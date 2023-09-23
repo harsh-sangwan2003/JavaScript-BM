@@ -1,0 +1,45 @@
+function Person(name,city){
+
+    this.name = name;
+    this.city = city;
+}
+
+Person.prototype.print = function(){
+    console.log(`Name is ${this.name} City is ${this.city}`);
+}
+Person.prototype.disp = function(){
+    console.log(`Name is ${this.name.toUpperCase()} City is ${this.city.toUpperCase()}`);
+}
+ƒ (){
+    console.log(`Name is ${this.name.toUpperCase()} City is ${this.city.toUpperCase()}`);
+}
+Person;
+ƒ Person(name,city){
+
+    this.name = name;
+    this.city = city;
+}
+Person.prototype
+{print: ƒ, disp: ƒ, constructor: ƒ}
+function Employee(id,salary){
+
+    this.id = id;
+    this.salary = salary;
+}
+undefined
+Employee.prototype.print = function(){
+    console.log(`ID is ${this.id} Salary is ${this.salary}`);
+}
+
+Employee.prototype.tax = function(){
+    return this.salary*0.10;
+}
+ƒ (){
+    return this.salary*0.10;
+}
+Employee.prototype.__proto__ = Person.prototype;
+{print: ƒ, disp: ƒ, constructor: ƒ}
+var ram = new Employee(1001,9999);
+undefined
+ram;
+Employee {id: 1001, salary: 9999}

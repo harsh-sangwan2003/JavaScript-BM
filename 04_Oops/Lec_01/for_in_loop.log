@@ -1,0 +1,15 @@
+var obj = {name:"Amit",id:1};
+undefined
+obj["joining date"] = '2021-09-01';
+'2021-09-01'
+obj[1] = 'P';
+'P'
+for(let key in obj){
+
+    console.log(key+" -> "+obj[key]);
+}
+VM809:3 1 -> P
+VM809:3 name -> Amit
+VM809:3 id -> 1
+VM809:3 joining date -> 2021-09-01
+undefined
